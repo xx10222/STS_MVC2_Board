@@ -1,0 +1,106 @@
+package kr.co.vo;
+
+import java.util.Calendar;
+import java.util.Date;
+
+
+public class BoardVO {
+		
+		private int bno;
+		private String title;
+		private String content;
+		private String writer;
+		private Date regdate;
+		private int hit;
+		private int groupno;
+		private int fk_seq;
+		private int depthno;
+		
+		static Calendar calendar = Calendar.getInstance();
+		static int today_year=calendar.get(Calendar.YEAR);
+		static int today_month=calendar.get(Calendar.MONTH)+1;
+		static int today_day=calendar.get(Calendar.DAY_OF_MONTH);
+		private String list_date;
+		private String read_date;
+		
+		public String GetList_date() {
+			return list_date;
+		}
+		public void SetList_date() {
+			
+		}
+		public String GetRead_date() {
+			return read_date;
+		}
+		public void SetRead_date() {
+			
+		}
+		public String findDay(int year, int month, int day) {
+			int num=0;
+			String result=" ";
+			calendar.set(year,month-1,day);
+			num = calendar.get(Calendar.DAY_OF_WEEK);
+			if(num==1) result="(일)";
+			if(num==2) result="(월)";
+			if(num==3) result="(화)";
+			if(num==4) result="(수)";
+			if(num==5) result="(목)";
+			if(num==6) result="(금)";
+			if(num==7) result="(토)";
+			return result;
+		}
+		public int getBno() {
+			return bno;
+		}
+		public void setBno(int bno) {
+			this.bno = bno;
+		}
+		public String getTitle() {
+			return title;
+		}
+		public void setTitle(String title) {
+			this.title = title;
+		}
+		public String getContent() {
+			return content;
+		}
+		public void setContent(String content) {
+			this.content = content;
+		}
+		public String getWriter() {
+			return writer;
+		}
+		public void setWriter(String writer) {
+			this.writer = writer;
+		}
+		public Date getRegdate() {
+			return regdate;
+		}
+		public void setRegdate(Date regdate) {
+			this.regdate = regdate;
+		}
+		public int getHit() {
+			return hit;
+		}
+		public void setHit(int hit) {
+			this.hit = hit;
+		}
+		public int getGroupno() {
+			return groupno;
+		}
+		public void setGroupno(int groupno) {
+			this.groupno = groupno;
+		}
+		public int getFk_seq() {
+			return fk_seq;
+		}
+		public void setFk_seq(int fk_seq) {
+			this.fk_seq = fk_seq;
+		}
+		public int getDepthno() {
+			return depthno;
+		}
+		public void setDepthno(int depthno) {
+			this.depthno = depthno;
+		}
+}

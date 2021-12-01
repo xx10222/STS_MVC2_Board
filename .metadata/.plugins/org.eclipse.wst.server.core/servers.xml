@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" com.springsource.tcserver.asf="false" com.springsource.tcserver.name="tomcat1" configuration-id="/Servers/tomcat1 - Pivotal tc Server Developer Edition-config" deployDir="wtpwebapps" hostname="localhost" id="tomcat1 - Pivotal tc Server Developer Edition" instanceDir="C:\Users\yjw49\Desktop\SoftProject\spring\spring-3.9.7\sts-bundle\pivotal-tc-server" name="tomcat1 - Pivotal tc Server Developer Edition" runtime-id="Pivotal tc Server Developer Edition (Runtime) v4.0" saveSeparateContextFiles="true" server-type="com.pivotal.server.tc.90" server-type-id="com.pivotal.server.tc.90" start-timeout="120" stop-timeout="15" testEnvironment="false" timestamp="1">
+    <list key="modules" value0="project2::org.eclipse.jst.jee.server:project2::jst.web::2.5"/>
+  </server>
+</servers>

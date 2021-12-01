@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="project2">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="37" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#project2#src/main/webapp/WEB-INF/spring/root-context.xml#37" aspect-start-line-number="37" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/project2/src/main/webapp/WEB-INF/spring/root-context.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:project2|3:src/main/webapp/WEB-INF/spring/root-context.xml|7:beans:12|8:boardServiceImple:12" bean-file="/project2/src/main/webapp/WEB-INF/spring/root-context.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/project2/src/main/webapp/WEB-INF/spring/root-context.xml" source="=project2/C:\/Users\/yjw49\/.m2\/repository\/org\/springframework\/spring-tx\/3.1.1.RELEASE\/spring-tx-3.1.1.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=project2/src\/main\/java&lt;kr.co.service{BoardServiceImple.java[BoardServiceImple~read~I" target-start-line="40"/>
+</aspect-definition>
+</aop-project>
+</aop-reference-model>
